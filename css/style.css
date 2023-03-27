@@ -1,0 +1,304 @@
+:root{
+    --bg:#ffffff;
+    --text-color:#000000;
+}
+:root.dark{
+    --bg:#000000;
+    --text-color:#ffffff;
+}
+body{
+    background: var(--bg);
+}
+/* common css start */
+:root{
+    --primary-font: 'Raleway', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --primary-color:#de4644;
+    --secondary-color:#222222 ;
+    --third-color:#444444;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* common css end */
+
+#jigjag{
+    height: 300px;
+}
+
+/* colorflipper section css start */
+#colorFlipper{
+    position: fixed;
+    right: 100px;
+    top:200px;
+    background:var(--primary-color);
+    border: 2px solid black;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 3px 5px 5px grey;
+    border-radius: 12px;
+    
+}
+
+/* colorflipper section css end */
+
+
+/* header section css start */
+header{
+    background-color:var(--third-color);
+    padding: 20px 0;
+    color: #dddddd;
+}
+header div.row{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header ul li {
+    padding: 20px;
+    border-right: 1px solid white;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+header ul li a{
+    color: #ffff;
+}
+
+/* header section css end */
+
+/* nav section css start */
+
+#nav div.row{
+    justify-content: space-between;
+    align-items: center;
+}
+#nav ul li a{
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 14px 23px;
+    font-weight: 500;
+    font-size:15p ;
+    color: var(--secondary-color);
+    position: relative;
+    transition: .7s;
+    margin: 10px 0px 20px ;
+}
+#nav ul li:hover a{
+    color: var(--primary-color);
+}
+#nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    transition: .6s;
+    transform: scaleX(0);
+}
+#nav ul li:hover a::after{
+transform: scaleX(1);
+}
+#nav .search ul li a{
+    color: var(--primary-color);
+    text-transform: lowercase;
+
+}
+
+#nav ul li button{
+     color:var(--third-color);
+     display: block;
+     margin-top: 10px;
+     padding: 10px;
+     font-size: 20px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ 
+ #search_box{
+     position: fixed;
+     inset: 0;
+     background: rgba(0, 0, 0, 0.8);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transform: scale(0) skew(10deg) rotate(40deg);
+     transform-origin: right;
+     transition: .5s;
+ }
+ #search_box.show{
+ 
+     transform: scale(1) skew(0deg) rotate(0deg);
+ }
+ #search_box #search_close{
+     position: absolute;
+     padding: 20px;
+     right: 50px;
+     top: 50px;
+     cursor: pointer;
+    
+ }
+ #search_box div input{
+    margin-right: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+ }
+ #search_box div button{
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .6s;
+ }
+ #search_box div button:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+ }
+/* nav section css end */
+
+/* sidebar section css start */
+#sidebar{
+    background-color: var(--third-color);
+    position: fixed;
+    width: 300px;
+    margin-left: -300px;
+    height: 300px;
+    transition: .5s;
+}
+#sidebar.show{
+    margin-left: 0;
+}
+#sidebar ul li a{
+    color: #fff;
+    display: block;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: var(--primary-font);
+    transition: .6s;
+}
+#sidebar ul li a:hover{
+    background-color: #de4644;
+}
+#sidebar #sidebar_toggler{
+    padding: 20px;
+    font-size: 25px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    left: 100%;
+    top:15px;
+    z-index: 999999;
+}
+
+/* sidebar section css end */
+
+/* result section css start */
+.app-form{
+    border-radius: 30px;
+    height: 400px;
+    margin-top: 100px;
+    width: 400px;
+    background-color: #444444;
+    text-align: center;
+    padding: 30px;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+  }
+.app-form-group input{
+    height: 30px;
+    width: 200px;
+}
+.app-form-button {
+    padding: 5px 20px;
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 20px 0px;
+  }
+.showdata{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: -10px;
+    padding-bottom: 10px;
+  }
+/* result section css end */
+
+/* number section css start */
+#number{
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 50px 25%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+#number input{
+    margin: 20px auto;
+    display: block;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#number button{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-transform: capitalize;
+}
+/* number section css end */
+
+
+
+#password_sec{
+    width: 500px;
+    height: 200px;
+    background-color: #444444;
+    text-align: center;
+    padding-top: 100px;
+    border-radius: 30px;
+}
+
+#password_sec input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+}
+#password_sec button{
+    padding: 5px 20px;
+    border-radius:10px ;
+    margin-left: 5px;
+}

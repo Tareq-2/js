@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Buy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <button id="mode_changer"><i class="fa-solid fa-moon"></i></button>
+
+     <!-- sidebar section start -->
+     <section id="sidebar"> 
+        <button id="sidebar_toggler">
+            <i class="fa solid fa-bars"></i>
+        </button>
+        <ul>
+            <li><a href="#">riding jacket</a></li>
+            <li><a href="#">riding pant</a></li>
+            <li><a href="#">gloves</a></li>
+            <li><a href="#">rain wear</a></li>
+            <li><a href="#">back pack</a></li>
+            <li><a href="#">tank bag</a></li>
+
+        </ul>
+    </section>
+
+    <!-- sidebar section end-->
+
+    <!--header section start -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="opening">
+                    <ul class="row">
+                        <li>
+                            <p>
+                             Eng   <i class="fa-solid fa-caret-down"></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                USD $<i class="fa-solid fa-caret-down"></i>
+                            </p>
+                        </li>
+                        <li>
+                            Toll Free:<a href="tel:+12345678900"> +123 4567 8900</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="login">
+                    <ul class="row">
+                        <li>
+                            <i class="fa-solid fa-heart"></i>
+                            <a href="#">Wishlist</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-user-large"></i>
+                            <a href="#"> My Account</a>
+                        </li>
+                        <li>
+                            <a href="#"> Login / Register </a>
+                        </li>
+
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </header>
+    <!--header section end -->
+
+    <!--nav section start-->
+    <nav id="nav">
+        <div class="container">
+            <div class="row">
+                <a href="#"><img src="./img/logo.png"></a>
+
+                <div class="menu">
+                    <ul class="row">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Accesorries</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><button id="search_button"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                    </ul>
+                    
+                        <section id="search_box">
+                            <button id="search_close">
+                                <i class="fa fa-times"></i>
+                            </button>
+                            <div>
+                                <input type="search">
+                                <button type="submit">Search</button>
+                            </div>
+                        </section>
+                </div>
+               
+            </div>
+            
+        </div>
+    </nav>
+    <!--nav section end-->
+
+
+        
+
+      <!-- color flipper start -->
+      <div class="container">
+        <div id="jigjag">
+            
+        </div>
+    </div>
+    <!-- color flipper end -->
+
+   
+
+
+    <!-- result section start -->
+    <div class="container">
+      
+            <div class="app-form">
+              <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="BANGLA" id="ban">
+              </div>
+              <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="MATHS" id="maths">
+              </div>
+               <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="ENGLISH" id="eng">
+              </div>
+              <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="PHYSICS" id="phy" >
+              </div>
+              <div >
+                <input type="button" name="" value="showtotal" class="app-form-button" onclick="calcy()">
+              </div>           
+              <div class="app-form-group showdata">
+                <p id="showData">  </p> 
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <!-- resul section start -->
+
+    <!-- number section start -->
+    <div class="container">
+        <div id="number">
+            <h1>ODD AND EVEN NUMBER</h1>
+            <input type="text" id="numberInput">
+            <button onclick="checkNumber()">check</button>
+        </div>
+    </div>
+    <!-- number section end-->
+
+    <!-- password section start -->
+    <div class="container">
+        <div id="password_sec">
+            <input type="password" id="password_field">
+    <button id="password_toggle"><i id="password_eye" class="fa-solid fa-eye-slash"></i></button>
+    <p id="password_msg"></p>
+        </div>
+    </div>
+    <!-- password section end -->
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
